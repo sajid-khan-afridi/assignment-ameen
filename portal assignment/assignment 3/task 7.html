@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+    <script>
+        var a1=[10,20,4,40,60,70];
+        var b1=[1,2,3,4,5,6,7,8,9,10];
+        var mArray=b1.concat(a1);
+        for(var a=0;a<(mArray.length);a++){
+        for(var b=a;b<(mArray.length-1);b++){
+           // document.write("<br>a="+a+"  b="+b+"<b> b+1= </b>"+(b+1));
+            if(mArray[a]==mArray[b+1]){
+                mArray.splice(b+1,1);
+            }
+        }
+    }
+        
+        document.write(mArray);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

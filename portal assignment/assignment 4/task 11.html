@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+    <script>
+    //var number =parseInt(prompt("Enter Number to calculate the Mean"));
+    output = [];
+    //sNumber = number.toString();
+    
+    sNumber=prompt("Enter Number to calculate the Mean");
+    for (var i = 0; i < (sNumber.length); i++) {
+    output.push(+sNumber.charAt(i));
+    }
+    //console.log(output);
+    var sum=0;
+    for (var i = 0; i < (sNumber.length); i++)
+    sum=sum+parseInt(output[i]);
+    //document.write(sum);
+    var mean=sum/sNumber.length;
+    document.write("Mean of "+output+" is "+mean);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

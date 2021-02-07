@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+    <script>
+        var str="The quick brown fox jumps over the lazy dog";
+        var a=str.split(" ");
+        var word="the";
+        var count=0;
+        
+        for(var i=0;i<=(a.length-1);i++){
+        if(a[i].toLowerCase()===word.toLowerCase()){
+            count+=1;
+            }
+        }
+        document.write("Text:The quick brown fox jumps over the lazy dog.<br>");
+        document.write("There are "+count+" occurrence(s) of word \'the\'.");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

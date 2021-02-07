@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q13</title>
+    <script>
+        var cDate=new Date();
+        document.write("Current Date: "+cDate+"<br>");
+        var epochTime=new Date(0);
+        var timeDiff=cDate.getTime()-epochTime.getTime();
+        var min=timeDiff/(1000*60)
+        document.write("Elapsed milliseconds since January 1, 1970: "+timeDiff+"<br>");
+        document.write("Elapsed minutes since January 1,1970: "+min);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

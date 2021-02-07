@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+    <script>
+        const arr1=[0,5,6,7];
+        arr2=[1,2,3,4];
+        //const arr3=arr1.reverse();
+        //document.write(arr1);
+        //document.write(arr3);
+        
+        function mirror(input){
+        var ret = new Array;
+        for(var i = input.length-1; i >= 0; i--) {
+        ret.push(input[i]);
+        }
+        return input.concat(ret);
+        } 
+        document.write("mirror of array "+arr1+" is "+mirror(arr1));
+        document.write("<br>mirror of array "+arr2+" is "+mirror(arr2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

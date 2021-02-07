@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+    <script>
+        var A=[24,53,78,91,12];
+
+        /*
+        var largest=A[0];
+        document.write("Array items: "+A);
+        //document.write("largest items: "+largest);
+        for(var a=0;a<=(A.length);a++){
+            for(var b=a;b<=(A.length);b++){
+            if(A[a]<A[b])
+            largest=A[b];
+        }
+        }
+        document.write("<br>The largest number is "+largest);
+        */
+        A.sort(function(a, b){return b-a})
+        document.write("<br>The largest number is "+A[0]);
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

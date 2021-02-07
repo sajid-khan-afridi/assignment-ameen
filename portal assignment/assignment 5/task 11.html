@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+    <script>
+        var str=prompt("Enter the single character to check for vowel");
+        var ch=str.charAt(0);
+        
+        function isVowel(ch){
+            switch(ch){
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    return true;
+                default:
+                    return false;
+            }
+        }
+    var condition=isVowel(ch);
+    if(condition)
+    document.write("It is Vowel");
+    else
+    document.write("It is not Vowel");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

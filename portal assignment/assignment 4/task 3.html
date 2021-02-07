@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <script>
+        var pw=prompt("Enter password");
+        var lowerCaseLetters = /[a-z]/g;
+        var upperCaseLetters = /[A-Z]/g;
+        //var letters=/[a-zA-Z]/g;
+       
+        var numbers = /[0-9]/g;
+        
+           
+       /* if(pw.match(lowerCaseLetters)||pw.match(upperCaseLetters))
+            if(pw.match(numbers))
+           if(pw.charAt(0).match(lowerCaseLetters)||pw.charAt(0).match(upperCaseLetters))
+           if(pw.length>=8)
+            alert("password is correct");
+                else
+            alert("enter a valid password"); */
+
+if(pw.match(numbers) && pw.length>=8 && pw.charAt(0).match(lowerCaseLetters)||pw.charAt(0).match(upperCaseLetters) && pw.match(lowerCaseLetters)||pw.match(upperCaseLetters) )        
+    alert("congratulations! password is correct");
+else
+    alert("You Enter invalid password, Please Enter a valid password");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

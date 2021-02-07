@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+    <script>
+        function calculateAge(input){
+            var date=new Date(input);
+            var cdate=new Date();
+            // var year=cdate.getFullYear()-date.getFullYear();
+            // var month=cdate.getMonth()-date.getMonth();
+            // var days=cdate.getDay()-date.getDay();
+            var timeDiff=cdate.getTime()-date.getTime();
+            var tDays=parseInt(timeDiff/(1000*60*60*24));
+            var years=parseInt(tDays/365);
+            var rDays=tDays%365;
+            
+            var months=parseInt(rDays/30);
+            var days=rDays%30;
+
+
+            //return days;
+            return "<br>You are "+years+" years, "+months+" months and "+days+" days old";
+        }
+        document.write(calculateAge("sep 01,1979"));
+        document.write(calculateAge("Aug 09,1986"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

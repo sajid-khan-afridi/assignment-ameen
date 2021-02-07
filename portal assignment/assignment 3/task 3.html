@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <script>
+        var colors=["Red","Pink","Black"];
+        document.write("Available colors: "+colors);
+        colors.unshift(prompt("What color you want to add at the beginning"));
+        document.write("<br>color added in beginning: "+colors);
+        colors.push(prompt("what color you want to add in the end"));
+        document.write("<br>color added in end:"+colors);
+        colors.unshift("gray");
+        colors.unshift("green");
+        document.write("<br>two more colors added in the beginning: "+colors);
+        colors.shift();
+        document.write("<br>first color is deleted: "+colors);
+        colors.pop();
+        document.write("<br>last color is deleted: "+colors);
+        var cPosition=parseInt(prompt("Please input the position where you want to add the color"));
+        var cName=prompt("Enter the color name");
+        colors.splice(cPosition,0,cName);
+        document.write("<br>New color is added : "+colors);
+        cPosition=parseInt(prompt("Please input the position from where you want to delete the color"));
+        cNumber=parseInt(prompt("Please input the number of colors you want to delete"));        
+        colors.splice(cPosition,cNumber);
+        document.write("<br>after deletion:"+colors);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <script>
+        var obMarks,totalMarks;
+        obMarks=prompt("Enter obtained Marks of out of three subjects");
+        totalMarks=prompt("Enter total marks");
+        var per=obMarks*100/totalMarks;
+        document.write("<h1>Marks Sheet</h1>")
+        if(per>=80){
+
+            document.write("<br>Total Marks:"+totalMarks);
+            document.write("<br>Marks Obtained:"+obMarks);
+            document.write("<br>Percentage:"+per);
+            document.write("<br>Grade: A-one");
+            document.write("<br>Remarks: Excellent");
+            //alert("You get A-one Grade,Excellent!"+"\nObtained Marks= "+obMarks+" out of "+totalMarks+"\nYou have percentage= "+per);
+        }
+        else if(per>=70&&per<80){
+            document.write("<br>Total Marks:"+totalMarks);
+            document.write("<br>Marks Obtained:"+obMarks);
+            document.write("<br>Percentage:"+per);
+            document.write("<br>Grade: A");
+            document.write("<br>Remarks: Good");
+            
+            //alert("You get A Grade,Good!"+"\nObtained Marks= "+obMarks+" out of "+totalMarks+"\nPercentage= "+per);
+            }
+        else if(per>=60&&per<70){
+            document.write("<br>Total Marks:"+totalMarks);
+            document.write("<br>Marks Obtained:"+obMarks);
+            document.write("<br>Percentage:"+per);
+            document.write("<br>Grade: B");
+            document.write("<br>Remarks: You need to improve");
+            
+            //alert("You get B Grade,You need to improve."+"\nObtained Marks= "+obMarks+" out of "+totalMarks+"\nYou have percentage= "+per);
+        }
+        else{
+            document.write("<br>Total Marks:"+totalMarks);
+            document.write("<br>Marks Obtained:"+obMarks);
+            document.write("<br>Percentage:"+per);
+            document.write("<br>Grade: Fail");
+            document.write("<br>Remarks: Sorry");
+            
+            //alert("You are Fail,Sorry!"+"\nObtained Marks= "+obMarks+" out of "+totalMarks+"\nYou have percentage= "+per);
+        }
+    </script>
+</head>
+<body> 
+    
+    
+</body>
+</html>

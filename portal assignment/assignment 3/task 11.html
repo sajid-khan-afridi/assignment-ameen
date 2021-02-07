@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+    <script>
+        var A=["cake", "apple pie", "cookie", "chips", "patties"];
+        var condition=true;
+        var item=prompt("Welcome to ABC Backery: What do you want to order sir/ma'am?");
+        for(var i=0; i<=(A.length);i++)
+        if(item===A[i]){
+        //var indexA=A.indexOf(item);
+        
+        var condition=false;
+        document.write(item+" is available at index "+i+" in our bakery");
+        }
+        if(condition)
+        document.write("We are sorry."+item+" is not available in our bakery")
+        // else{
+        // 
+        // }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

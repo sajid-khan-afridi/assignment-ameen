@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q12</title>
+    <script>
+        
+        function guess(){
+            var rdm=100*(Math.random().toFixed(2));
+            return rdm;
+        }
+        //document.write(guess());
+       do{
+            var i=0;
+            var random=guess();
+            console.log(random);
+            while(i<3){
+    var num=parseInt(prompt("Enter the Guess Number!"));
+                if(num===random){
+                    alert("You are right, You won");
+                    condition=false;
+                    break;
+                }else
+                    alert("Your Guess is \'Incorrect\'\nPlease try again.");
+                i++;
+            }
+    var condition=confirm("Do you want to play again?\nif YES then press \'OK'\n otherwise press \'Cancel\'");
+
+
+        }while(condition==true);
+            </script>
+        </head>
+        <body>
+            
+</body>
+</html>

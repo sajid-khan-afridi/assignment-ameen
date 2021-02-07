@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <script>
+    var str=prompt("Enter word or phrase or sequence and then check whether the string is palindrome or not ");
+    var str2=str.replace(/ /g,"");
+    var arr1=str2.split("");
+    var arr2=str2.split("");
+    var arr3=arr1.reverse();
+    //document.write(arr1+"  "+arr2);
+    
+    // var condition=true;
+    // for(var a=0;(a<=arr1.length-1);a++)
+    // if(arr1[a]===arr2[a]){
+    
+    //     condition=false;
+
+    // //console.log(a);
+    // }
+
+    // if(condition==false)
+
+    if(JSON.stringify(arr1)==JSON.stringify(arr2))
+    document.write("Palindrome");
+    else
+    document.write("Not Palindrome");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
