@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS chapter 10 to 14</title>
+</head>
+    <script>
+        var num1;
+        var num2;
+        var symbol;
+        var result;
+        num1=parseInt(prompt("Enter 1st number"));
+        num2=parseInt(prompt("Enter 2nd number"));
+        symbol=prompt("Please any operator + - / * % ");
+        if(symbol=="+"){
+        result=num1+num2;
+        alert(num1+symbol+num2+"="+result);
+        }else if(symbol=="-"){
+        result=num1-num2;
+        alert(num1+symbol+num2+"="+result);
+        }else if(symbol=="*"){
+        result=num1*num2;
+        alert(num1+symbol+num2+"="+result);
+        }else if(symbol=="/"){
+        result=num1/num2;
+        alert(num1+symbol+num2+"="+result);
+        }else if(symbol=="%"){
+        result=num1%num2;
+        alert(num1+symbol+num2+"="+result);
+        }else
+        alert("plz enter the valid operator");
+        
+        //result=num1 symbol num2;
+        //alert(num1+symbol+num2+"="+result);
+    </script>
+<body>
+    
+</body>
+</html>

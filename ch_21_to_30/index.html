@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch_21_to_30</title>
+    <script>
+        var fInput=parseFloat(prompt("Enter the input value in float"));
+        
+        var input=Math.ceil(fInput);
+        var text="This is my dummy text";
+        var sliceText=text.slice(0,4);
+        var splitText=sliceText.split("");
+        // console.log(splitText);
+        var reverseText=new Array;//or var reverseText=[];
+        for(var i=sliceText.length-1;i>=0;i--){
+            // reverseText=sliceText.charAt(i);
+            reverseText.push(splitText[i]);
+        }
+        console.log(reverseText);
+        var str = reverseText.join("");
+        alert(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

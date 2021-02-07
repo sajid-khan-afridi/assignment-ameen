@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch_18_19_20</title>
+<script>
+    var courses=[];
+    for(var i=0;i<5;i++){
+    courses.push(prompt("course "+(i+1), "computer"));
+    }
+    // courses.push(prompt("course 2", "english"));
+    // courses.push(prompt("course 3", "urdu"));
+    // courses.push(prompt("course 4", "physics"));
+    // courses.push(prompt("course 5", "biology"));
+    alert(courses);
+    for(var i=0;i<5;i++){
+        courses.splice(i,1,prompt("course "+(i+1),courses[i]));
+    }
+    alert(courses);
+</script>
+</head>
+<body>
+    
+</body>
+</html>

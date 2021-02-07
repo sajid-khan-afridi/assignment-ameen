@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch_31_to_34</title>
+    <script>
+        var name=prompt("Enter Your name");
+        var date=prompt("Enter the birth date");
+        var month=prompt("Enter the birth month");
+        var year=prompt("Enter the birth year");
+        var DOB=new Date(`${month} ${date} ${year}`);
+        //console.log(date);
+        console.log(`Hello ${name}, Good Morning, AfterNoon, Evening or Night`);
+        console.log(`Your DOB is ${DOB}`);
+        var cDate=new Date();
+        var timeDiff=cDate.getTime()-DOB.getTime();
+        var dYear=parseInt(timeDiff/(1000*60*60*24*365));
+        var rem1=timeDiff%(1000*60*60*24*365);
+        
+        var dMonth=parseInt(rem1/(1000*60*60*24*30));
+        var rem2=rem1%(1000*60*60*24*30);
+
+        var dDay=parseInt(rem2/(1000*60*60*24));
+        var rem3=rem2%(1000*60*60*24);
+
+        var dHour=parseInt(rem3/(1000*60*60));
+        var rem4=rem3%(1000*60*60);
+
+        var dMin=parseInt(rem4/(1000*60));
+        var rem5=rem4%(1000*60);
+
+        var dSec=parseInt(rem5/(1000));
+        var rem5=rem4%(1000);
+        
+        console.log(`You are ${dYear} years ${dMonth} Month ${dDay} Days ${dHour} Hours ${dMin} Minutes ${dSec} Seconds old`)
+        var tDays=parseInt(timeDiff/(1000*60*60*24));
+        console.log(`Your Age in Days ${tDays}`);
+
+        // var nDate=new Date(); 
+        // console.log(dYear);
+        // console.log(dMonth);
+        // console.log(dDay);
+        // console.log(dHour);
+        // console.log(dMin);
+        // console.log(dSec);
+
+        // var Ndob=new Date(`${month} ${date} ${year+1}`);
+        // console.log(Ndob.getFullYear);
+
+        // var nDOB=new Date(new Date().setFullYear(new Date().getFullYear() + 1));
+        // nDOB.setMonth(parseInt(month));
+        // nDOB.setDate(parseInt(date));
+        // console.log(nDOB);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

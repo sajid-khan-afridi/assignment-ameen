@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var course=[];
+        var obMarks=0;
+        for(var i=0;i<=4;i++){
+        course[i]=parseInt(prompt(`course ${i+1} marks `));
+        obMarks+=course[i];
+    }
+        var totalMarks=parseInt(prompt("Enter total marks: "));
+        var grade=obMarks*100/totalMarks;
+        // switch case Grade A+ 90% to 100% , 
+        // Grade A 75% to 89% , 
+        // Grade B 60% to 74% , Grade C 45% to 60% , 
+        // Grade D 30% to 44% Grade F 0% to 29%
+        //console.log(obMarks);
+        switch (true) {
+        case grade >= 90:
+        alert("A+");
+        break;
+        case grade >= 75:
+        alert("A");
+        break;
+    
+        case grade >= 60:
+        alert("B");
+        break;
+    
+    case grade >= 45:
+        alert("C");
+        break;
+    case grade >= 30:
+    alert("D");
+    break;
+        default:
+        alert("F");
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
